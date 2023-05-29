@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+$fond : #f8f9fA;
+$bleu : #0D6EFD;
+$inputBackground : #F1F1F1;
+$boutonColor: #FFFFFF86;
+$blanc : #FFFFFF;
+$fondFormulaire : #FFFFFF;
+$footerBackground: #D9D9D9;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto ;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (min-width: 1080px) {
+    * {
+        max-width: 1440px;
+    }
+}
+
+body {
+    background-color: $fond;
+}
+
+h3 {
+    font-size: x-large;
+}
+
+button {
+    background-color: $bleu;
+    border-radius: 3px;
+    border: none;
+    color: $boutonColor;
+    padding: 5px 10px;
+}
+
+input {
+    background-color: $inputBackground;
+    border-radius: 3px;
+}
+
+i {
+    font-size: 48px;
+    color: $bleu;
+    padding: 10px;
+}

@@ -1,0 +1,113 @@
+// mobile first & base :
+.navHeader {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: $fond;
+}
+
+header {
+    background-image: url(/src/asset/background.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $blanc;
+
+    h1 {
+        padding: 20px 20px 40px 20px;
+    }
+
+    form {
+        display: flex;
+        gap: 10px;
+
+        input {
+            
+            border: none;
+
+            &::placeholder {
+                padding-left: 4px;
+            }
+        }
+    }
+}
+
+// mobile , valeurs uniquement pour le format mobile 
+//  (flex direction column qui ne voulais pas s'appliquer a partir de 768px ??)
+@media only screen and (max-width: 767px) {
+    header {
+        form {
+            flex-direction: column;
+
+            input {
+                width: 210px;
+                height: 40px;
+            }
+    
+            button {
+                width: 90px;
+                height: 40px;
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+// tablette :
+@media only screen and (min-width: 768px) {
+    .navHeader {
+        p {
+            transform: translate(-50%);
+            padding: 5px 0px;
+        }
+    
+        button {
+            transform: translate(+50%);
+        }
+    }
+
+    header {
+        max-width: 1050px;
+
+        h1 {
+            max-width: 570px;
+            padding: 35px 0;
+        }
+
+        form {
+            gap: 14px;
+            display: flex;
+            flex-direction: row;
+    
+            input {
+                width: 320px;
+                height: 40px;
+    
+                &::placeholder {
+                    font-size: 15px;
+                    padding: 10px; 
+                }
+            } 
+    
+            button {
+                width: 90px;
+                height: 40px;
+                font-size: 15px;
+                padding-left: 10px; 
+            }
+        }
+    }
+
+}
+
+// desktop :
+@media only screen and (min-width: 1024px) {
+    .navHeader {
+        max-width: 1350px;
+    }
+}

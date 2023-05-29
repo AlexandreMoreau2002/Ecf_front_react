@@ -1,0 +1,64 @@
+// mobile first & base:
+.footer {
+    background-color: $footerBackground;
+    max-width: 1050px;
+    padding: 15px 25px;
+    margin-top: 15px;
+    font-size: smaller;
+    
+    nav > p {
+        display: inline;
+        padding: 5px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: $bleu;
+    }
+}
+
+// mobile first only : 
+@media only screen and (max-width: 767px) {
+    .footer {
+        text-align: center;
+        
+        nav {
+            :nth-last-child(1) {
+                margin-bottom: 20px;
+            }
+            
+            a {
+                display: block;
+            }
+        }
+    }
+}
+
+// tablette : 
+@media only screen and (min-width:768px) {
+    .footer {
+        padding: 20px 100px ;
+        text-align-last: left;
+    }
+}
+
+// desktop :
+@media only screen and (min-width:1024px) {
+    .footer {
+        padding: 30px 120px 30px 95px; 
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        
+        .navFooter {
+            a {
+                padding-right: 5px;
+            }
+
+            p {
+                padding-right: 5px;
+            }
+        }
+    }
+}

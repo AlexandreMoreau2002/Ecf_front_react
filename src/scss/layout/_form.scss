@@ -12,30 +12,30 @@ h3 {
     margin-bottom: 135px;
 
     
-    .contactDetail {
+}
+.contactDetail {
+    
+    input {
+        height: 30px;
+        width: 150px;
+        border: 1px solid $footerBackground;
         
-        input {
-            height: 30px;
-            width: 150px;
-            border: 1px solid $footerBackground;
-            
-            &::placeholder {
-                padding-left: 4px;
-            }
-        }
-    }
-
-    textarea {
-        resize: none;
-        border: 1px solid $footerBackground;   
-        background-color: $inputBackground;
-        width: 100%;
-        border-radius: 3px;
-
         &::placeholder {
             padding-left: 4px;
-            padding-top: 2px;
         }
+    }
+}
+
+textarea {
+    resize: none;
+    border: 1px solid $footerBackground;   
+    background-color: $inputBackground;
+    width: 100%;
+    border-radius: 3px;
+
+    &::placeholder {
+        padding-left: 4px;
+        padding-top: 2px;
     }
 }
 

@@ -126,7 +126,6 @@ header form input::placeholder {
 }
 .section {
   text-align: center;
-  display: flex;
 }
 .section .article {
   padding: 20px;
@@ -147,7 +146,7 @@ header form input::placeholder {
   max-width: 800px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .section {
     flex-direction: column;
   }
@@ -155,8 +154,14 @@ header form input::placeholder {
     margin: 10px auto 0;
   }
 }
+@media only screen and (min-width: 772px) and (max-width: 810px) {
+  .section::after {
+    width: 530px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .section {
+    display: flex;
     flex-flow: row wrap;
   }
   .section::after {
@@ -183,22 +188,24 @@ h3 {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
   margin-bottom: 135px;
 }
-.formSection .contactDetail input {
+
+.contactDetail input {
   height: 30px;
   width: 150px;
   border: 1px solid #D9D9D9;
 }
-.formSection .contactDetail input::placeholder {
+.contactDetail input::placeholder {
   padding-left: 4px;
 }
-.formSection textarea {
+
+textarea {
   resize: none;
   border: 1px solid #D9D9D9;
   background-color: #F1F1F1;
   width: 100%;
   border-radius: 3px;
 }
-.formSection textarea::placeholder {
+textarea::placeholder {
   padding-left: 4px;
   padding-top: 2px;
 }

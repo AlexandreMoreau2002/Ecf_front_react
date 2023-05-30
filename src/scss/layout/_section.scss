@@ -1,7 +1,6 @@
 // mobile first & base : 
 .section {
     text-align: center;
-    display: flex;
     
     .article {
         padding: 20px;
@@ -28,7 +27,7 @@
 }
 
 // mobile : 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
     .section {
         flex-direction: column;
 
@@ -38,10 +37,18 @@
     }
 }
 
+@media only screen and (min-width: 772px) and (max-width: 810px) {
+    .section::after {
+        width: 530px;
+    }
+}
+
+
 
 // tablette : 
 @media only screen and (min-width: 768px) {
     .section {
+        display: flex;
         flex-flow: row wrap;
         
         &::after {

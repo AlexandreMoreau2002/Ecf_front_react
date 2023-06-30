@@ -3,16 +3,16 @@ import React from 'react'
 function Footer() {
   return (
     <div className='footer'>
-     <nav className='navFooter'>
-      <a href="#" >About</a> 
-      <p>-</p>
-      <a href="#">Contact</a> 
-      <p>-</p>
-      <a href="#">Therms of Use</a> 
-      <p>-</p>
-      <a href="#">Privacy Policy</a> 
-     </nav>
-     <p>My Website 2022 - All right Reserved</p>
+      <nav className='navFooter'>
+        <button href="#" >About</button>
+        <p>-</p>
+        <button href="#">Contact</button>
+        <p>-</p>
+        <button href="#">Therms of Use</button>
+        <p>-</p>
+        <button href="#">Privacy Policy</button>
+      </nav>
+      <p>My Website 2022 - All right Reserved</p>
     </div>
   )
 }

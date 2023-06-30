@@ -160,10 +160,6 @@ header form input::placeholder {
   }
 }
 @media only screen and (min-width: 768px) {
-  .section {
-    display: flex;
-    flex-flow: row wrap;
-  }
   .section::after {
     margin: 30px auto 0;
   }
@@ -292,12 +288,15 @@ textarea::placeholder {
   margin-top: 15px;
   font-size: smaller;
 }
+.footer button:nth-child(1) {
+  padding-left: 0px;
+}
 .footer nav > p {
   display: inline;
   padding: 5px;
 }
-.footer a {
-  text-decoration: none;
+.footer button {
+  background-color: #D9D9D9;
   color: #0D6EFD;
 }
 

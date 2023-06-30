@@ -6,13 +6,17 @@
     margin-top: 15px;
     font-size: smaller;
     
+    button:nth-child(1) {
+        padding-left: 0px;
+    }
+
     nav > p {
         display: inline;
         padding: 5px;
     }
     
-    a {
-        text-decoration: none;
+    button {
+        background-color: $footerBackground;
         color: $bleu;
     }
 }
